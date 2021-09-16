@@ -61,7 +61,7 @@ public class ClientService {
         }
         catch (EmptyResultDataAccessException e) {
             throw new ResourceNotFoundException("Id not found " + id);
-            
+
         } catch (DataIntegrityViolationException e) {
             throw new DatabaseException("Integrity violation");
         }
